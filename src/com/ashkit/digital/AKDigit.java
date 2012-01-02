@@ -122,12 +122,12 @@ public class AKDigit {
 	/**
 	 * @return actual width of the digit
 	 */
-	public int getWidth(){ return (int) (20*th + 2*g); }
+	public int getWidth(){ return Math.round (20*th + 2*g); }
 
 	/**
 	 * @return actual height of the digit
 	 */
-	public int getHeight(){ return (int) (34*th + 4*g); }
+	public int getHeight(){ return Math.round (34*th + 4*g); }
 
 	/**
 	 * @return the italic
@@ -167,8 +167,8 @@ public class AKDigit {
 			}
 
 			if (decimal)
-				gr.fillOval(p.x + (int)(18 * th + 2 * g + getHeight()*r), p.y + (int)(30 * th + 4 * g),
-						(int)(4 * th), (int)(4 * th));
+				gr.fillOval(p.x + Math.round(18 * th + 2 * g + getHeight()*r), p.y + Math.round(30 * th + 4 * g),
+						Math.round(4 * th), Math.round(4 * th));
 		}
 	}
 	
@@ -188,136 +188,136 @@ public class AKDigit {
 	}
 	
 	protected int getItalicWidth() {
-		return (int) (getHeight()*r);
+		return Math.round (getHeight()*r);
 	}
 
 	protected void initPoints() {
-		xPoints[UL][0] = (int) (3*th);
-		xPoints[UL][1] = (int) (6*th);
-		xPoints[UL][2] = (int) (6*th);
-		xPoints[UL][3] = (int) (3*th);
-		xPoints[UL][4] = (int) (2*th);
-		xPoints[UL][5] = (int) (2*th);
+		xPoints[UL][0] = Math.round (3*th);
+		xPoints[UL][1] = Math.round (6*th);
+		xPoints[UL][2] = Math.round (6*th);
+		xPoints[UL][3] = Math.round (3*th);
+		xPoints[UL][4] = Math.round (2*th);
+		xPoints[UL][5] = Math.round (2*th);
 
-		xPoints[DL][0] = (int) (3*th);
-		xPoints[DL][1] = (int) (6*th);
-		xPoints[DL][2] = (int) (6*th);
-		xPoints[DL][3] = (int) (3*th);
-		xPoints[DL][4] = (int) (2*th);
-		xPoints[DL][5] = (int) (2*th);
+		xPoints[DL][0] = Math.round (3*th);
+		xPoints[DL][1] = Math.round (6*th);
+		xPoints[DL][2] = Math.round (6*th);
+		xPoints[DL][3] = Math.round (3*th);
+		xPoints[DL][4] = Math.round (2*th);
+		xPoints[DL][5] = Math.round (2*th);
 
-		xPoints[UR][0] = (int) (17*th+2*g);
-		xPoints[UR][1] = (int) (18*th+2*g);
-		xPoints[UR][2] = (int) (18*th+2*g);
-		xPoints[UR][3] = (int) (17*th+2*g);
-		xPoints[UR][4] = (int) (14*th+2*g);
-		xPoints[UR][5] = (int) (14*th+2*g);
+		xPoints[UR][0] = Math.round (17*th+2*g);
+		xPoints[UR][1] = Math.round (18*th+2*g);
+		xPoints[UR][2] = Math.round (18*th+2*g);
+		xPoints[UR][3] = Math.round (17*th+2*g);
+		xPoints[UR][4] = Math.round (14*th+2*g);
+		xPoints[UR][5] = Math.round (14*th+2*g);
 
-		xPoints[DR][0] = (int) (17*th+2*g);
-		xPoints[DR][1] = (int) (18*th+2*g);
-		xPoints[DR][2] = (int) (18*th+2*g);
-		xPoints[DR][3] = (int) (17*th+2*g);
-		xPoints[DR][4] = (int) (14*th+2*g);
-		xPoints[DR][5] = (int) (14*th+2*g);
+		xPoints[DR][0] = Math.round (17*th+2*g);
+		xPoints[DR][1] = Math.round (18*th+2*g);
+		xPoints[DR][2] = Math.round (18*th+2*g);
+		xPoints[DR][3] = Math.round (17*th+2*g);
+		xPoints[DR][4] = Math.round (14*th+2*g);
+		xPoints[DR][5] = Math.round (14*th+2*g);
 
-		xPoints[U][0] = (int) (3*th+g);
-		xPoints[U][1] = (int) (4*th+g);
-		xPoints[U][2] = (int) (16*th+g);
-		xPoints[U][3] = (int) (17*th+g);
-		xPoints[U][4] = (int) (14*th+g);
-		xPoints[U][5] = (int) (6*th+g);
+		xPoints[U][0] = Math.round (3*th+g);
+		xPoints[U][1] = Math.round (4*th+g);
+		xPoints[U][2] = Math.round (16*th+g);
+		xPoints[U][3] = Math.round (17*th+g);
+		xPoints[U][4] = Math.round (14*th+g);
+		xPoints[U][5] = Math.round (6*th+g);
 
-		xPoints[M][0] = (int) (3*th+g);
-		xPoints[M][1] = (int) (5*th+g);
-		xPoints[M][2] = (int) (15*th+g);
-		xPoints[M][3] = (int) (17*th+g);
-		xPoints[M][4] = (int) (15*th+g);
-		xPoints[M][5] = (int) (5*th+g);
+		xPoints[M][0] = Math.round (3*th+g);
+		xPoints[M][1] = Math.round (5*th+g);
+		xPoints[M][2] = Math.round (15*th+g);
+		xPoints[M][3] = Math.round (17*th+g);
+		xPoints[M][4] = Math.round (15*th+g);
+		xPoints[M][5] = Math.round (5*th+g);
 
-		xPoints[D][0] = (int) (3*th+g);
-		xPoints[D][1] = (int) (6*th+g);
-		xPoints[D][2] = (int) (14*th+g);
-		xPoints[D][3] = (int) (17*th+g);
-		xPoints[D][4] = (int) (16*th+g);
-		xPoints[D][5] = (int) (4*th+g);
+		xPoints[D][0] = Math.round (3*th+g);
+		xPoints[D][1] = Math.round (6*th+g);
+		xPoints[D][2] = Math.round (14*th+g);
+		xPoints[D][3] = Math.round (17*th+g);
+		xPoints[D][4] = Math.round (16*th+g);
+		xPoints[D][5] = Math.round (4*th+g);
 
-		xPoints[DOT1][0] = (int) (8*th+g);
-		xPoints[DOT1][1] = (int) (12*th+g);
-		xPoints[DOT1][2] = (int) (12*th+g);
-		xPoints[DOT1][3] = (int) (10*th+g);
-		xPoints[DOT1][4] = (int) (8*th+g);
-		xPoints[DOT1][5] = (int) (8*th+g);
+		xPoints[DOT1][0] = Math.round (8*th+g);
+		xPoints[DOT1][1] = Math.round (12*th+g);
+		xPoints[DOT1][2] = Math.round (12*th+g);
+		xPoints[DOT1][3] = Math.round (10*th+g);
+		xPoints[DOT1][4] = Math.round (8*th+g);
+		xPoints[DOT1][5] = Math.round (8*th+g);
 
-		xPoints[DOT2][0] = (int) (10*th+g);
-		xPoints[DOT2][1] = (int) (12*th+g);
-		xPoints[DOT2][2] = (int) (12*th+g);
-		xPoints[DOT2][3] = (int) (8*th+g);
-		xPoints[DOT2][4] = (int) (8*th+g);
-		xPoints[DOT2][5] = (int) (10*th+g);
+		xPoints[DOT2][0] = Math.round (10*th+g);
+		xPoints[DOT2][1] = Math.round (12*th+g);
+		xPoints[DOT2][2] = Math.round (12*th+g);
+		xPoints[DOT2][3] = Math.round (8*th+g);
+		xPoints[DOT2][4] = Math.round (8*th+g);
+		xPoints[DOT2][5] = Math.round (10*th+g);
 
 
-		yPoints[UL][0] = (int) (3*th+g);
-		yPoints[UL][1] = (int) (6*th+g);
-		yPoints[UL][2] = (int) (14*th+g);
-		yPoints[UL][3] = (int) (17*th+g);
-		yPoints[UL][4] = (int) (16*th+g);
-		yPoints[UL][5] = (int) (4*th+g);
+		yPoints[UL][0] = Math.round (3*th+g);
+		yPoints[UL][1] = Math.round (6*th+g);
+		yPoints[UL][2] = Math.round (14*th+g);
+		yPoints[UL][3] = Math.round (17*th+g);
+		yPoints[UL][4] = Math.round (16*th+g);
+		yPoints[UL][5] = Math.round (4*th+g);
 
-		yPoints[DL][0] = (int) (17*th+3*g);
-		yPoints[DL][1] = (int) (20*th+3*g);
-		yPoints[DL][2] = (int) (28*th+3*g);
-		yPoints[DL][3] = (int) (31*th+3*g);
-		yPoints[DL][4] = (int) (30*th+3*g);
-		yPoints[DL][5] = (int) (18*th+3*g);
+		yPoints[DL][0] = Math.round (17*th+3*g);
+		yPoints[DL][1] = Math.round (20*th+3*g);
+		yPoints[DL][2] = Math.round (28*th+3*g);
+		yPoints[DL][3] = Math.round (31*th+3*g);
+		yPoints[DL][4] = Math.round (30*th+3*g);
+		yPoints[DL][5] = Math.round (18*th+3*g);
 
-		yPoints[UR][0] = (int) (3*th+g);
-		yPoints[UR][1] = (int) (4*th+g);
-		yPoints[UR][2] = (int) (16*th+g);
-		yPoints[UR][3] = (int) (17*th+g);
-		yPoints[UR][4] = (int) (14*th+g);
-		yPoints[UR][5] = (int) (6*th+g);
+		yPoints[UR][0] = Math.round (3*th+g);
+		yPoints[UR][1] = Math.round (4*th+g);
+		yPoints[UR][2] = Math.round (16*th+g);
+		yPoints[UR][3] = Math.round (17*th+g);
+		yPoints[UR][4] = Math.round (14*th+g);
+		yPoints[UR][5] = Math.round (6*th+g);
 
-		yPoints[DR][0] = (int) (17*th+3*g);
-		yPoints[DR][1] = (int) (18*th+3*g);
-		yPoints[DR][2] = (int) (30*th+3*g);
-		yPoints[DR][3] = (int) (31*th+3*g);
-		yPoints[DR][4] = (int) (28*th+3*g);
-		yPoints[DR][5] = (int) (20*th+3*g);
+		yPoints[DR][0] = Math.round (17*th+3*g);
+		yPoints[DR][1] = Math.round (18*th+3*g);
+		yPoints[DR][2] = Math.round (30*th+3*g);
+		yPoints[DR][3] = Math.round (31*th+3*g);
+		yPoints[DR][4] = Math.round (28*th+3*g);
+		yPoints[DR][5] = Math.round (20*th+3*g);
 
-		yPoints[U][0] = (int) (3*th);
-		yPoints[U][1] = (int) (2*th);
-		yPoints[U][2] = (int) (2*th);
-		yPoints[U][3] = (int) (3*th);
-		yPoints[U][4] = (int) (6*th);
-		yPoints[U][5] = (int) (6*th);
+		yPoints[U][0] = Math.round (3*th);
+		yPoints[U][1] = Math.round (2*th);
+		yPoints[U][2] = Math.round (2*th);
+		yPoints[U][3] = Math.round (3*th);
+		yPoints[U][4] = Math.round (6*th);
+		yPoints[U][5] = Math.round (6*th);
 
-		yPoints[M][0] = (int) (17*th+2*g);
-		yPoints[M][1] = (int) (15*th+2*g);
-		yPoints[M][2] = (int) (15*th+2*g);
-		yPoints[M][3] = (int) (17*th+2*g);
-		yPoints[M][4] = (int) (19*th+2*g);
-		yPoints[M][5] = (int) (19*th+2*g);
+		yPoints[M][0] = Math.round (17*th+2*g);
+		yPoints[M][1] = Math.round (15*th+2*g);
+		yPoints[M][2] = Math.round (15*th+2*g);
+		yPoints[M][3] = Math.round (17*th+2*g);
+		yPoints[M][4] = Math.round (19*th+2*g);
+		yPoints[M][5] = Math.round (19*th+2*g);
 
-		yPoints[D][0] = (int) (31*th+4*g);
-		yPoints[D][1] = (int) (28*th+4*g);
-		yPoints[D][2] = (int) (28*th+4*g);
-		yPoints[D][3] = (int) (31*th+4*g);
-		yPoints[D][4] = (int) (32*th+4*g);
-		yPoints[D][5] = (int) (32*th+4*g);
+		yPoints[D][0] = Math.round (31*th+4*g);
+		yPoints[D][1] = Math.round (28*th+4*g);
+		yPoints[D][2] = Math.round (28*th+4*g);
+		yPoints[D][3] = Math.round (31*th+4*g);
+		yPoints[D][4] = Math.round (32*th+4*g);
+		yPoints[D][5] = Math.round (32*th+4*g);
 
-		yPoints[DOT1][0] = (int) (6*th+g);
-		yPoints[DOT1][1] = (int) (6*th+g);
-		yPoints[DOT1][2] = (int) (12*th+g);
-		yPoints[DOT1][3] = (int) (14*th+g);
-		yPoints[DOT1][4] = (int) (12*th+g);
-		yPoints[DOT1][5] = (int) (12*th+g);
+		yPoints[DOT1][0] = Math.round (6*th+g);
+		yPoints[DOT1][1] = Math.round (6*th+g);
+		yPoints[DOT1][2] = Math.round (12*th+g);
+		yPoints[DOT1][3] = Math.round (14*th+g);
+		yPoints[DOT1][4] = Math.round (12*th+g);
+		yPoints[DOT1][5] = Math.round (12*th+g);
 
-		yPoints[DOT2][0] = (int) (19*th+3*g);
-		yPoints[DOT2][1] = (int) (21*th+3*g);
-		yPoints[DOT2][2] = (int) (28*th+3*g);
-		yPoints[DOT2][3] = (int) (28*th+3*g);
-		yPoints[DOT2][4] = (int) (21*th+3*g);
-		yPoints[DOT2][5] = (int) (19*th+3*g);
+		yPoints[DOT2][0] = Math.round (19*th+3*g);
+		yPoints[DOT2][1] = Math.round (21*th+3*g);
+		yPoints[DOT2][2] = Math.round (28*th+3*g);
+		yPoints[DOT2][3] = Math.round (28*th+3*g);
+		yPoints[DOT2][4] = Math.round (21*th+3*g);
+		yPoints[DOT2][5] = Math.round (19*th+3*g);
 
 		for(int i = 0; i<noOfBars; i++)
 			for(int j = 0; j<noOfPoints; j++)
