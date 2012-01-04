@@ -5,15 +5,20 @@ import java.awt.Graphics;
 import java.awt.Point;
 
 /**
- * This code is free for any purpose of use. Just Keep this comment block as it is
- * and It will be nice if you give me credit, where you used this (not mandatory.)
+ * AKDigit.java
  * 
  * @author Ashik uddin Ahmad
  * email: ashikcu@gmail.com
  * 
- * other contributors:
- * 1. name: enhancement-description
- * 2. 
+ * TERM OF USE:
+ * 		Permission is granteed to use this code, with or without modification,
+ * 		in any application. But it will be worth providing that credit is given
+ * 		to the original work.
+ *
+ * This program is distributed in the hope that it will be usefull,
+ * but WITHOUT ANY WARRANTY.
+ * 
+ * PLEASE DO NOT REMOVE THIS COPYRIGHT BLOCK 
  */
 public class AKDigit {
 	
